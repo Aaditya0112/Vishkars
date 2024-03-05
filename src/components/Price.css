@@ -1,0 +1,10 @@
+.Price{
+    background-color: grey;
+    opacity: 0.5;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+.Price a{
+    color: black;
+}

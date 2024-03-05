@@ -1,0 +1,9 @@
+.slidebtn2{
+    max-height: 20%;
+    max-width: 10%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    
+}

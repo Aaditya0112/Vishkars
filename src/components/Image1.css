@@ -1,0 +1,15 @@
+.Image1 img{
+    height: 100%;
+    width: 100%;
+    
+}
+.image-container{
+    transition: 1s ease-in;
+}
+@media (max-width: 768px) {
+    .image-container {
+     height: 100%;
+     width: 100%
+     ;
+    }
+}
