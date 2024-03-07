@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import Logo from "./logo";
 import { Link } from "react-router-dom";
 import Racing from "./Pages/Racing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 

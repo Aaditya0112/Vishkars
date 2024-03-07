@@ -1,11 +1,14 @@
 // InfoBox.js
 
-import React from "react";
+import React, { useContext } from "react";
 import "./Infobox.css";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import Navbar from "./Navbar";
 import Image from "../Images/Image1.jpg";
+import { BuyContext } from "./BuyContext";
+
+const {addtoCart} = useContext(BuyContext);
 
 function InfoBox({ id, carName, miles, isNew, price }) {
   // const Products = [
@@ -13,12 +16,9 @@ function InfoBox({ id, carName, miles, isNew, price }) {
   //   { id: 1, name: "Mercedes 123", price: 40000 },
   // ];
 
-  const handleBuyClick = (id) => {
-    return ( 
-      <div>{ Products[id]}</div>
-    );
+  
 
-  };
+
 
   return (
     <div className="info-box">
@@ -26,7 +26,7 @@ function InfoBox({ id, carName, miles, isNew, price }) {
       <p>Miles: {miles}</p>
       <p>{isNew ? "New Car": "Second Hand"}</p>
 
-        <button onClick={handleBuyClick}>Buy</button>
+        <button onClick={addtoCart}>Buy</button>
     </div>
   );
 }

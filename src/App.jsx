@@ -13,6 +13,7 @@ import ElectricCar from './components/Pages/ElectricCar';
 import Logo2 from "../src/components/Pages/3.jpg";
 import Price from './components/Price';
 import Cart from './components/Cart';
+import { BuyContextProvider } from './components/BuyContext';
 
 function App() {
   const [buyButtonClicked, setBuyButtonClicked] = useState(false);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+    <BuyContextProvider>
       <Navbar />
 
       <Routes>
@@ -37,11 +39,13 @@ function App() {
         <Route path='/Cart' element={<Cart />} />
       </Routes>
 
+
       
       
       
 
       <Footer />
+      </BuyContextProvider>
     </>
   );
 }
